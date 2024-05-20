@@ -36,8 +36,26 @@ Criei uma "Classe mãe", na qual trabalhei os métodos comuns para funcionamento
       }
 
 
-  Nele pude explorar os 4 pilares do POO:
-    Abstração: 
-    Encapsulamento: Nem todos elementos precisam estar visíveis em todas as camadas. Neste projeto temos os exemp
-    Herança: 
-    Polimorfismo: 
+### Encapsulamento
+Todo projeto é feito em inumeras camadas nas quais teremos interação de diferentes pessoas, usuários, desenvolvedores, prestadores de serviço, entre outros. A exemplo deste projeto, os usuários dos aplicativos de mensagem estão interessados em enviar e receber mensagens e os outros processos para o funcionamento do aplicativo, por mais que sejam imprescindíveis, não precisam estar visíveis para todos. 
+
+Sendo mais direto, para enviar e receber uma mensagem, o usuário precisa estar com acesso a internet e os aplicativos fazem essa validação. Porém o usuário nao precisa ver como é realizado este processo ponta a ponta, apenas se ele foi bem sucedido ou não. Isso vale tambem para como o historico de mensagens é salvo. É importante, mas o usuário não precisa dos detalhes de como é feito.
+
+        public void receberMensagem() {
+              System.out.println("Recebendo mensagem");
+      
+          }
+          protected void validarConexaoInternet() {
+              System.out.println("Verificando conexão");
+      
+          }
+          private void salvarHistoricoMensagem() {
+              System.out.println("Salvando histórico");
+          }
+
+##
+### Abstração
+
+##
+### Polimorfismo
+
